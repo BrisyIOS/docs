@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>张旭的个人博客</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="Keywords" content="张旭, 张旭的技术博客, Git, Nodejs, Lunix, Go, Mysql, MongoDB, Redis, OpenRestry, RabbitMQ, ELK, Lua, Nginx, Docker">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    // var gitalkConfig = {
+    //   clientID: '084f309ea8bc385148bc',
+    //   clientSecret: 'fa4bff71adc7fbb44a7ca6deffecc9ec43e29301',
+    //   accessToken: '30c55e31acbb0cb61d30f92d14e32541880eefaf',
+    //   repo: 'Nodejs-Roadmap',
+    //   owner: 'q-angelo',
+    //   admin: ["q-angelo"],
+    //   distractionFreeMode: false
+    // };
+    window.$docsify = {
+      el: '#app', // docsify 初始化的挂载元素，可以是一个 CSS 选择器，默认为 #app 如果不存在就直接绑定在 body 上。
+      name: '张旭的个人博客',
+      repo: '',
+      coverpage: true,
+      loadSidebar: true, // 加载自定义侧边栏，参考多页文档。设置为 true 后会加载 _sidebar.md 文件，也可以自定义加载的文件名。
+      loadNavbar: false, // 加载自定义导航栏，参考定制导航栏 了解用法。设置为 true 后会加载 _navbar.md 文件，也可以自定义加载的文件名。
+      // repo: 'https://github.com/docsifyjs/docsify/', // 配置仓库地址或者 username/repo 的字符串，会在页面右上角渲染一个 GitHub Corner 挂件。
+      maxLevel: 4, // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
+      search: {
+        paths: 'auto',
+        placeholder: '🔍  请输入关键字',
+        noData: '暂无结果',
+        depth: 6
+      },
+      // plugins: [
+      //   function (hook, vm) {
+      //     hook.doneEach(function() {
+      //       var label, domObj, main, divEle, gitalk;
+      //       label = vm.route.path.split("/").pop();
+      //       domObj = Docsify.dom;
+      //       main = domObj.getNode("#main");
+
+      //       Array.apply(
+      //         null,
+      //         document.querySelectorAll("div.gitalk-container")
+      //       ).forEach(function(ele) {
+      //         ele.remove();
+      //       });
+
+      //       divEle = domObj.create("div");
+      //       divEle.id = "gitalk-container-" + label;
+      //       divEle.className = "gitalk-container";
+      //       divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+      //       domObj.appendTo(domObj.find(".content"), divEle);
+      //       gitalk = new Gitalk(
+      //         Object.assign(gitalkConfig, { id: !label ? "home" : label })
+      //       );
+      //       gitalk.render("gitalk-container-" + label);
+      //     });
+      //   }
+      // ]
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+</body>
+</html>
